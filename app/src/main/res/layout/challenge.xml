@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:id="@+id/activity_contact">
+
+    <!-- 1. العنوان (AJOUTER UN CONTACT) -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="#FF5722"
+        android:padding="10dp"
+        android:text="AJOUTER UN CONTACT"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <!-- 2. حقل الاسم الكامل (Nom complet) -->
+    <TextView
+        android:id="@+id/labelFullName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text=" Nom complet: "
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintWidth_percent="0.33"
+        />
+
+    <EditText
+        android:id="@+id/etFullName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Entrez le nom complet"
+        android:inputType="text"
+        app:layout_constraintStart_toEndOf="@id/labelFullName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/labelFullName"
+        app:layout_constraintBottom_toBottomOf="@id/labelFullName"
+        app:layout_constraintWidth_percent="0.67"
+        />
+
+    <!-- 3. حقل الهاتف (Téléphone) -->
+    <TextView
+        android:id="@+id/labelPhone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:text=" Téléphone: "
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/labelFullName"
+        app:layout_constraintWidth_percent="0.33"
+        />
+
+    <EditText
+        android:id="@+id/etPhone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Entrez le numéro de téléphone"
+        android:inputType="phone"
+        app:layout_constraintStart_toEndOf="@id/labelPhone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/labelPhone"
+        app:layout_constraintBottom_toBottomOf="@id/labelPhone"
+        app:layout_constraintWidth_percent="0.67"
+        />
+
+    <!-- 4. حقل البريد الإلكتروني (Email) -->
+    <TextView
+        android:id="@+id/labelEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:text=" Email : "
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/labelPhone"
+        app:layout_constraintWidth_percent="0.33"
+        />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Entrez l'email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toEndOf="@id/labelEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/labelEmail"
+        app:layout_constraintBottom_toBottomOf="@id/labelEmail"
+        app:layout_constraintWidth_percent="0.67"
+        />
+
+    <!-- 5. حقل العنوان (Adresse) - الآن أصبح سطرين متتاليين -->
+    <TextView
+        android:id="@+id/labelAddress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:text=" Adresse : "
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/labelEmail"
+        app:layout_constraintWidth_percent="0.33"
+        />
+
+    <EditText
+        android:id="@+id/etAddress1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Ligne 1"
+        android:inputType="text"
+        app:layout_constraintStart_toEndOf="@id/labelAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/labelAddress"
+        app:layout_constraintWidth_percent="0.67"
+        />
+
+    <EditText
+        android:id="@+id/etAddress2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Ligne 2"
+        android:inputType="text"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="@id/etAddress1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etAddress1"
+        app:layout_constraintWidth_percent="0.67"
+        />
+
+    <!-- 6. حقل الفئة (Catégorie) - RadioGroup -->
+    <TextView
+        android:id="@+id/labelCategory"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:text="Catégorie: "
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etAddress2"
+        app:layout_constraintWidth_percent="0.33"
+        />
+
+    <RadioGroup
+        android:id="@+id/rgCategory"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toEndOf="@id/labelCategory"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/labelCategory"
+        app:layout_constraintBottom_toBottomOf="@id/labelCategory"
+        app:layout_constraintWidth_percent="0.67"
+        >
+
+        <RadioButton
+            android:id="@+id/rbFriend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ami"
+            android:layout_marginEnd="8dp"/>
+
+        <RadioButton
+            android:id="@+id/rbFamily"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Famille"
+            android:layout_marginEnd="8dp"/>
+
+        <RadioButton
+            android:id="@+id/rbWork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Travail"/>
+    </RadioGroup>
+
+    <!-- 7. الأزرار (Buttons) -->
+    <Button
+        android:id="@+id/btn_ajouter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ajouter"
+        android:backgroundTint="#FF5722"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toStartOf="@id/btn_reinitialiser"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rgCategory"
+        />
+
+    <Button
+        android:id="@+id/btn_reinitialiser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Réinitialiser"
+        android:backgroundTint="#FF5722"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toEndOf="@id/btn_ajouter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btn_ajouter"
+        />
+
+    <!-- 8. رسالة الحالة (Status Message) -->
+    <TextView
+        android:id="@+id/done_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aucun contact ajouté"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_ajouter"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
