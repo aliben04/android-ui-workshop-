@@ -44,8 +44,8 @@ Fonction de réinitialisation
 ## 🖼️ Captures d’Écran
 
 ![Calculatrice](calculatrice.png)
-![Profil Utilisateur](captures/profil.png)
-![Application de Contact](captures/contact.png)
+![Profil Utilisateur](profil.png)
+![Application de Contact](contact.png)
 
 
 ## 📚 Ce que j’ai appris
