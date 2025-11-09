@@ -43,8 +43,16 @@ Fonction de réinitialisation
 
 ## 🖼️ Captures d’Écran
 
+- Calculatrice (LinearLayout)
+
 ![Calculatrice](calculatrice.png)
+
+- Calculatrice (LinearLayout)
+
 ![Profil Utilisateur](profil.png)
+
+- Challenge : Application de Contact
+
 ![Application de Contact](contact.png)
 
 
