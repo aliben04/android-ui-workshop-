@@ -43,7 +43,7 @@ Fonction de réinitialisation
 
 ## 🖼️ Captures d’Écran
 
-![Calculatrice](captures/calculatrice)
+![Calculatrice](captures/calculatrice.png)
 ![Profil Utilisateur](captures/profil.png)
 ![Application de Contact](captures/contact.png)
 
