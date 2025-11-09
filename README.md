@@ -48,7 +48,7 @@ Fonction de réinitialisation
 ![Application de Contact](captures/contact.png)
 
 
-📚 Ce que j’ai appris
+## 📚 Ce que j’ai appris
 
 - Créer et organiser des interfaces avec LinearLayout et ConstraintLayout
 
@@ -60,8 +60,8 @@ Fonction de réinitialisation
 
 - Structurer proprement une activité Android avec fonctions dédiées (ajouterContact, réinitialiser, enregistrerProfil)
 
-
-⚙️ Difficultés rencontrées
+ 
+## ⚙️ Difficultés rencontrées
 
 Problème : Alignement vertical des champs dans ConstraintLayout
 
